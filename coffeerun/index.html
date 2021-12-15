@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amtrack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <style>
+        form :focus:required:invalid {
+          border-color: #bf3f3d;
+        }
+  </style>
+</head>
+<body class="container">
+  <body style="background-color:#868ab9;"></body>
+    <header><h1>Amtrack</h1></header>
+    <hr>
+    <section>
+        <div class="panel panel-primary">
+          <h4>1 Traveler</h4>
+            <div class="panel body">
+                <form data-coffee-order="form">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input class="form-control" name="first" id="firstName" autofocus required pattern=[a-zA-Z\s]+ required placeholder="First Name">
+                    </div> <!-- form-group -->
+                    <div class="form-group">
+                        <label for="middleInitial">Middle Initial </label>
+                        <input class="form-control" type="middle" name="middleInitial" id="middleInput" required placeholder="Middle Initial">   
+                    </div> <!-- form-group -->
+
+                    <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input class="form-control" type="middle" name="middleInitial" id="lastInput" required placeholder="Last Name">   
+                  </div> <!-- form-group -->
+
+
+                    <div class="form-group">
+                        <label for="flavorShot">Country Code</label>
+                        <select id="flavorShot" class="form-control" name="country-code">
+                          <option value="">None</option>
+                          <option value="usa">1</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="mobile">Mobile Phone Number</label>
+                        <input class="form-control" type="middle" name="middleInitial" id="lastInput" required placeholder="xxx-xxx-xxxx">   
+                    </div> <!-- form-group -->
+
+                    <div class="form-group">
+                      <label for="guestReward">Amtrack Guest Reward</label>
+                      <input class="form-control" type="guest" name="guestReward" id="guestInput" required placeholder="Amtrack Guest Rewards #">   
+                  </div> <!-- form-group -->
+
+                    <button type="submit" class="btn btn-outline-primary">Continue</button>
+                    <button type="reset" class="btn btn-outline-primary">Back</button>
+
+                </form>
+            </div> <!-- panel body -->
+        </div> <!-- panel panel-primary -->
+
+        <div class="panel panel-primary">
+            <div class="panel-body">
+              <hr>
+              <h4>Payment</h4>
+              <div class="form-group">
+                <label for="credit">New Credit Card</label>
+                <input class="form-control" type="credit" name="creditCard" id="creditInput" required placeholder="Card Number *">   
+            </div> <!-- form-group -->
+            <div class="form-group">
+              <label for="exp">Expiration</label>
+              <input class="form-control" type="expiration" name="expirationData" id="expirationInput" required placeholder="Exp. (mm/yy) *">   
+          </div> <!-- form-group -->
+          <div class="form-group">
+            <label for="secuirty">Security Code</label>
+            <input class="form-control" type="security" name="secuirtyCode" id="securityInput" required placeholder="Security Code *">   
+        </div> <!-- form-group -->
+        <div class="form-group">
+          <label for="name">Name on Card</label>
+          <input class="form-control" type="name" name="nameCard" id="nameInput" required placeholder="Name on Card *">   
+      </div> <!-- form-group -->
+              </div>
+            </div>
+          </div>
+    <div class="panel panel-primary"
+    <div class = "panel-body">
+      <hr>
+      <h4>Price Summary</h4>
+      <hr>
+      <h3>Fare: $1,645.00</h3>
+      <h3>Add-ons: $40.00</h3>
+      <hr>
+      <h3>Balance Due: $1,685.00</h3>
+    </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script src="scripts/validation.js" charset="utf-8"></script>
+    <script src="scripts/checklist.js" charset="utf-8"></script>
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/remotedatastore.js" charset="utf-8"></script>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
+    <script src="scripts/truck.js" charset="utf-8"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
+  </body>
+</body>
+</html>
